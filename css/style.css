@@ -1,0 +1,29 @@
+body {
+    font: 20px verdana;
+}
+
+.navbar {
+    background-color: rgb(131, 161, 132);
+}
+
+.quem-somos{
+    background-color: rgb(231, 226, 226);
+}
+
+.margin {
+   /* margin-top: 30px; (cria um espaçamento visivel e separa as divs*/
+   padding-top: 30px; /*cria uma margem interna por isso o backgroundo permanece*/
+   padding-bottom: 50px; /*margem para baixo*/
+}
+
+.parceiros {
+    background-color: rgba(226, 154, 87, 0.986);
+}
+
+.bg-footer{
+    background-color: rgb(131, 161, 132);
+}
+
+.d-flex {
+    padding-left: 550px; /*espaçamento do menu*/
+}
