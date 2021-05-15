@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Bootstrap - Digital One</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/digitalone.png" width="220" height="80">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <!--# + nome do id significa que quando o valor da ancora for clicado a página 
+                        será redirecionada para o local que o href está indicando-->
+                    <a class="nav-link" href="#quemsomos">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#parceiros">Parceiros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicos">Serviços</a>
+                </li>
+            </ul>
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+
+        </div>
+    </nav>
+
+    <section id="quemsomos">
+        <!-- Podemos declarar vários nomes em uma class e definir comportamentos.
+        Container-fluid = Ocupa toda a extensão da página
+        text-center = centraliza o texto do container
+        margin = classe para estilizar espaçamento do container-->
+        <div class="container-fluid quem-somos text-center margin">
+            <h3 class="margin">Quem Somos</h3>
+            <!--rounded-circle = arredonda a imagem-->
+            <img src="img/equipe.png" class="rounded-circle" width="400" height="400">
+            <h3>Somos um time comprometido com os resultados!</h3>
+        </div>
+    </section>
+
+    <section id="parceiros">
+        <!-- Podemos declarar vários nomes em uma class e definir comportamentos.
+        Container-fluid = Ocupa toda a extensão da página
+        text-center = centraliza o texto do container
+        margin = classe para estilizar espaçamento do container-->
+        <div class="container-fluid parceiros text-center margin">
+            <h3 class="margin">Parceiros</h3>
+                <!--Container, linha, coluna (sm = pequeno, md = medio, lg =grande)
+                    Obs.: Quebramos essa section em 3 colunas com cada uma utilizando um espaço de 4 colunas-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                             <!--rounded-circle = arredonda a imagem-->
+                            <img src="img/parceiros.png" class="rounded-circle" width="400" height="400">
+                        </div>
+                        <div class="col-lg-4">
+                            <!--rounded-circle = arredonda a imagem-->
+                           <img src="img/parceiros2.png" class="rounded-circle" width="400" height="400">
+                       </div>
+                       <div class="col-lg-4">
+                        <!--rounded-circle = arredonda a imagem-->
+                       <img src="img/parceiros.png" class="rounded-circle" width="400" height="400">
+                   </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container-fluid servicos text-center margin">
+            <h3 class="margin">Serviços</h3>
+            <!--Essa row está sendo dividida em duas partes-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Confiabilidade é a probabilidade que um sistema dê como resposta aquilo que se espera dele durante um determinado período de tempo e sobre certas condições.</p>
+                    <img src="img/site2.jpg" alt="Foto de computador" width="100%" height="80%">
+                </div>
+                <div class="col-lg-6">
+                    <p>Qualidade no Atendimento significa atender da melhor forma que puder, independente de quem seja o nosso cliente,excelência em um produto ou serviço.</p>
+                    <img src="img/site3.jpg" alt="Foto de computador" width="100%" height="80%">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="container-fluid bg-footer text-center margin">
+        <p>Desenvolvido por Renata Leonel</p>
+    </footer>
+</body>
+
+</html>
